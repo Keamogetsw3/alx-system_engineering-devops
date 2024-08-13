@@ -5,6 +5,10 @@
 ## Overview
 This project is aimed at deepening your understanding of working with APIs in Python, specifically focusing on scripting and back-end development. The exercises will help you build proficiency in making API calls, handling JSON data, and implementing advanced features like recursion and pagination.
 
+![image](https://github.com/user-attachments/assets/0f95dce6-142a-4b6c-9180-952a89ab2b7c)
+image by [Rapid](https://rapidapi.com/blog/api-glossary/api/)
+
+
 **Project Duration:**  
 - Start: Aug 13, 2024, 6:00 AM  
 - End: Aug 14, 2024, 6:00 AM  

@@ -1,5 +1,7 @@
 # 0x16. API Advanced
 
+## Python | Scripting | Back-end | API
+
 ## Overview
 This project is aimed at deepening your understanding of working with APIs in Python, specifically focusing on scripting and back-end development. The exercises will help you build proficiency in making API calls, handling JSON data, and implementing advanced features like recursion and pagination.
 

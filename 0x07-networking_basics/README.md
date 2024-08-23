@@ -2,7 +2,7 @@
 
 ## DevOps | Network
 
-**Project Duration:** May 8, 2024, 6:00 AM to May 10, 2024, 6:00 AM
+**Project Duration:** 24 Hours
 
 ### Resources
 

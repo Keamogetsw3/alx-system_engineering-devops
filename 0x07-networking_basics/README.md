@@ -35,6 +35,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     - The OSI (Open Systems Interconnection) Model describes how networked systems communicate.
     - It is a theoretical framework for mapping how applications and devices link and send data over a web of connections.
 - How many layers it has
+      ![image](https://github.com/user-attachments/assets/36ff7628-82d1-4ac5-9c11-fed463a7fcbf)
+
 - How it is organized
 
 #### What is a LAN

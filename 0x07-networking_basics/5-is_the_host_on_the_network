@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-
-# Check if an argument is provided
-if [ -z "$1" ]; then
-    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-    exit 1
+# Pings an IP address 5 times
+if [[ $# -ge 1 ]]; then
+	ping -c 5 "$1"
+else
+	echo 'Usage: 5-is_the_host_on_the_network {IP_ADDRESS}'
 fi
-
-# Ping the given IP address 5 times and ensure output is displayed
-ping -c 5 "$1"

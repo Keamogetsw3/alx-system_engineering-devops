@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Pings an IP address received as an argument 5 times.
 
 # Check if an argument is provided
 if [ -z "$1" ]; then
@@ -7,5 +6,5 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-# Ping the given IP address 5 times
+# Ping the given IP address 5 times and ensure output is displayed
 ping -c 5 "$1"

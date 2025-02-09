@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
-# Run Apache on a Docker container.
-echo "Hello ALX" >> /etc/apache2.conf
+# Run Apache on a Docker container and verify its status.
+echo "Hello ALX" >> /etc/apache2/apache2.conf
+
+# Start Apache service
 service apache2 start
+
+# Check if Apache is running
+service apache2 status | grep "Active: active (running)"

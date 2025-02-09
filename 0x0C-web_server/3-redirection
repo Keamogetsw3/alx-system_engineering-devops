@@ -3,6 +3,7 @@
 #+    Listens on port 80.
 #+    Returns a page containing "Hello World!" when queried
 #++    at the root with a curl GET request.
+#/redirect_me is redirecting to another page
 
 sudo apt-get update
 sudo apt-get install -y nginx
@@ -19,6 +20,9 @@ cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.b
 
 # Creating new index
 echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
+
+# Setting up /redirect_me
+sudo sed -i '24i\	rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
 
 # Restarting nginx
 sudo service nginx restart

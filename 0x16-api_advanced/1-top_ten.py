@@ -12,10 +12,24 @@ def top_ten(subreddit):
     params = {
         "limit": 10
     }
-    response = requests.get(url, headers=headers, params=params,
-                            allow_redirects=False)
-    if response.status_code == 404:
+    
+    response = requests.get(url, headers=headers, params=params, allow_redirects=False)
+
+    # Check if the response is valid JSON
+    if response.status_code != 200:
         print("None")
         return
-    results = response.json().get("data")
-    [print(c.get("data").get("title")) for c in results.get("children")]
+
+    try:
+        response_json = response.json()
+    except ValueError:
+        print("Error: Invalid JSON response.")
+        return
+
+    # Handle empty responses or invalid subreddits
+    results = response_json.get("data", {}).get("children", [])
+    if not results:
+        print("None")
+    else:
+        for c in results:
+            print(c.get("data", {}).get("title", "No title available"))
